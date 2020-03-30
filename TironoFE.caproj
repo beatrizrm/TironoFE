@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>TironoFE</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>37cxarvzl7m6d</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Persist" version="1">Persist</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1708</width>
+        <height>960</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="danca" sid="507262774327022">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="v1" sid="817013300986704" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Persist" sid="830041582882982">
+                    <behavior id="Persist" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="0" name="danca" pingpong="0" repeatcount="1" repeatto="0" sid="901075811710166" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\2.png" />
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\6.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\8.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inicio" sid="238636937243678">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\beatr\Documents\TironoFe\imagem\galdu.jpg" />
+        </object-type>
+        <object-type name="Audio" sid="373800118725673">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="iniciar" sid="688974166690351">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="214653143057968">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373779605346345" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\INCIAR.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="comojogar" sid="943351640354292">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="372856738150667">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161011559949366" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\INSTRUCOES.png">
+                        <collision-poly>
+                            <point x="0.0125" y="0.125" />
+                            <point x="0.9875" y="0.125" />
+                            <point x="1" y="1" />
+                            <point x="0.0125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sobre" sid="196194175528914">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="938754181857435">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="602578935897570" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\SOBRE.png">
+                        <collision-poly>
+                            <point x="0.025" y="0.125" />
+                            <point x="0.5" y="0" />
+                            <point x="0.975" y="0.125" />
+                            <point x="0.925" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.025" y="0.875" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="danca2" sid="321628510974151">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="danca2" pingpong="0" repeatcount="1" repeatto="0" sid="514768342833150" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\1.png" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\2.png" />
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.508772" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca2\7.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="147980846652399">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="sobret" sid="680246137338828">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\beatr\Documents\TironoFe\imagem\sobre.jpg" />
+        </object-type>
+        <object-type name="dancinha" sid="250382963419947">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="dancinha" pingpong="0" repeatcount="1" repeatto="0" sid="839765941316966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_1.png" />
+                    <frame duration="1" hotspotX="0.513514" hotspotY="0.507246" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_6.png" />
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_9.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\dancinha_10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="voltar" sid="851973136216830">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="954981839002545">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="404303177192337" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\voltar.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.979167" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.0416667" y="0.75" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cenario" sid="762211933052224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838787447092575" speed="5">
+                    <frame duration="1" hotspotX="0.500759" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\cenario.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao" sid="592655847082626">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="981960121815537">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="593968268802671" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="personagem" sid="462861360213177">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="602060759867156">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="530977155635182">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="tiro" pingpong="0" repeatcount="1" repeatto="0" sid="769808551674124" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\preparatiro_2.png">
+                        <image-point name="tiro" x="0.952381" y="0.3" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\preparatiro_3.png">
+                        <image-point name="tiro" x="0.926829" y="0.289474" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.511111" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\preparatiro_4.png">
+                        <image-point name="tiro" x="0.955556" y="0.411765" />
+                    </frame>
+                </animation>
+                <animation framecount="5" loop="0" name="voando" pingpong="0" repeatcount="1" repeatto="0" sid="453289772615380" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510638" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\pulo_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\pulo_3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507246" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\pulo_4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\pulo_5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\sprite_1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="312434096520559" speed="5">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.511111" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\preparatiro_1.png">
+                        <collision-poly>
+                            <point x="0.205128" y="0.177778" />
+                            <point x="0.487179" y="0.0888889" />
+                            <point x="0.692308" y="0.266667" />
+                            <point x="0.820513" y="0.488889" />
+                            <point x="0.74359" y="0.777778" />
+                            <point x="0.487179" y="0.644444" />
+                            <point x="0.153846" y="0.866667" />
+                            <point x="0.128205" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="10" loop="0" name="transformacao" pingpong="0" repeatcount="1" repeatto="0" sid="415373922321769" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\2.png" />
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509804" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\6.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\8.png" />
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="C:\Users\beatr\Documents\TironoFe\imagem\danca\10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="parede" sid="493296100135386">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="461683362123226">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="212578821819126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vida" sid="297289351203610">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440867970904612" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\beatr\Documents\Sistema de vida-Gold Skull Tutoriais\Sistema de vida-Gold Skull Tutoriais\hearts.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tvida" sid="447589546838066">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="178902288973425" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\vida.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.0625" y="0.75" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="723789027563560">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\beatr\Documents\TironoFe\imagem\instrucoes.jpg" />
+        </object-type>
+        <object-type name="peixe" sid="840163075574874">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="813401073382210" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="320991469531305">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814638538779243" speed="5">
+                    <frame duration="1" hotspotX="2.2619" hotspotY="0.483871" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\fish1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="beterraba" sid="912279205109424">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="627843074573311" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="662918641976733">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277929219135040" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\Beterraba.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.286667" />
+                            <point x="0.82" y="0.18" />
+                            <point x="0.873333" y="0.5" />
+                            <point x="0.766667" y="0.766667" />
+                            <point x="0.5" y="0.873333" />
+                            <point x="0.126667" y="0.873333" />
+                            <point x="0.286667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="erros" sid="408098625118815">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410086184687072" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\erros.png">
+                        <collision-poly>
+                            <point x="0.0208333" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.9375" y="0.375" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.0208333" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="acertos" sid="663309196765493">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="880931955740833" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\pontos.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.946429" y="0.375" />
+                            <point x="0.839286" y="0.5" />
+                            <point x="0.928571" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0178571" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tiro" sid="116076259708442">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="636301814649831">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="tiro" pingpong="0" repeatcount="1" repeatto="0" sid="577012157209286" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.533333" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\tiro_1.png">
+                        <collision-poly>
+                            <point x="0.304348" y="0.466667" />
+                            <point x="0.478261" y="0.266667" />
+                            <point x="0.782609" y="0.333333" />
+                            <point x="0.869565" y="0.466667" />
+                            <point x="0.826087" y="0.733333" />
+                            <point x="0.478261" y="0.8" />
+                            <point x="0.217391" y="0.666667" />
+                            <point x="0.173913" y="0.466667" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="0.533333" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\tiro_1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="0.533333" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\tiro_2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu" sid="431884602449600">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="711073178027615">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132411999821732" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\inciio.png">
+                        <collision-poly>
+                            <point x="0.0416667" y="0.25" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.979167" y="0.125" />
+                            <point x="1" y="0.5" />
+                            <point x="0.979167" y="0.875" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.0416667" y="0.75" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fonte" sid="291071247380648">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\beatr\Documents\TironoFe\imagem\fonte.png" />
+        </object-type>
+        <object-type name="brocolis" sid="698019726139795">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="178514347530340" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="168671223136456">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150334083443451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\broccoli.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.208333" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.7" y="0.25" />
+                            <point x="1" y="0.5" />
+                            <point x="0.65" y="0.708333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.3" y="0.75" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batatafrita" sid="493676078137516">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="260139900191928" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="845118435482128">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722639797161970" speed="5">
+                    <frame duration="1" hotspotX="0.469136" hotspotY="0.461538" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\batatafrita.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cereais" sid="846133038194334">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="778852302441063" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="474827029549646">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="312662831080894" speed="5">
+                    <frame duration="1" hotspotX="1.41176" hotspotY="0.407407" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\Cereals.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.323529" y="1" />
+                            <point x="0.088235" y="0.444444" />
+                            <point x="0.411765" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="couve" sid="158349237969077">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="807857020424114" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="398676893337722">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="804160828268968" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\couve.png">
+                        <collision-poly>
+                            <point x="0.259259" y="0.259259" />
+                            <point x="0.5" y="0.185185" />
+                            <point x="0.740741" y="0.259259" />
+                            <point x="0.814815" y="0.5" />
+                            <point x="0.740741" y="0.740741" />
+                            <point x="0.5" y="0.888889" />
+                            <point x="0.259259" y="0.740741" />
+                            <point x="0.185185" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="feijão" sid="209330466621263">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="566241956796893" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="547704260000637">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406496975049423" speed="5">
+                    <frame duration="1" hotspotX="1.5" hotspotY="2.58065" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\Cereals.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0.34375" y="1" />
+                            <point x="0.09375" y="1" />
+                            <point x="0.4375" y="0.354839" />
+                            <point x="1" y="0.258065" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="espinafre" sid="948482892387511">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="400793886279883" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="984251073586485">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="764553295376266" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501493" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\spinach.png">
+                        <collision-poly>
+                            <point x="0.134078" y="0.143284" />
+                            <point x="0.5" y="0.0238806" />
+                            <point x="0.689944" y="0.331343" />
+                            <point x="0.969274" y="0.498507" />
+                            <point x="0.76257" y="0.746269" />
+                            <point x="0.5" y="0.967164" />
+                            <point x="0.175978" y="0.81194" />
+                            <point x="0.00558659" y="0.498507" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ceu" sid="282909451663456">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="512338125769384">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924050836220041" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="307318037569201">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="682204308947354" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\reator.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="408017054724008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934567371451805" speed="5">
+                    <frame duration="1" hotspotX="0.507143" hotspotY="0.992857" original-source="C:\Users\beatr\Documents\TironoFe\imagem\arc-reactor-png-13.png">
+                        <collision-poly>
+                            <point x="0.0428571" y="0.35" />
+                            <point x="0.507143" y="0.0142857" />
+                            <point x="0.964286" y="0.357143" />
+                            <point x="0.264286" y="0.928571" />
+                            <point x="0.507143" y="0.985714" />
+                            <point x="0.771429" y="0.907143" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="vidan" sid="670039629950694">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263602270858482" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cenoura" sid="127968466332311">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="884917489323527" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="394222206627261">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367381650560113" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\alimentos_12.png">
+                        <collision-poly>
+                            <point x="0.413793" y="0.352941" />
+                            <point x="0.482759" y="0.235294" />
+                            <point x="0.793103" y="0.176471" />
+                            <point x="0.724138" y="0.5" />
+                            <point x="0.586207" y="0.647059" />
+                            <point x="0.137931" y="0.882353" />
+                            <point x="0.344828" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundointroducao" sid="297843536441580">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="423814267824759" speed="5">
+                    <frame duration="1" hotspotX="0.500759" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\sprite\cenario.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="962114758188359">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494706224547695" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500582" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\avengers-logo-pixel-art-original.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thor" sid="995466365804889">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="713327193663948">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253143260646777" speed="5">
+                    <frame duration="1" hotspotX="0.502304" hotspotY="0.502304" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\thor_1.png">
+                        <collision-poly>
+                            <point x="0.294931" y="0.294931" />
+                            <point x="0.497696" y="0.156682" />
+                            <point x="0.894009" y="0.105991" />
+                            <point x="0.847926" y="0.497696" />
+                            <point x="0.894009" y="0.894009" />
+                            <point x="0.497696" y="0.986175" />
+                            <point x="0.198157" y="0.801843" />
+                            <point x="0.156682" y="0.497696" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hulk" sid="510912474165224">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="835905830373010">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="686833853096301" speed="5">
+                    <frame duration="1" hotspotX="0.715116" hotspotY="0.995305" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\capitaohulk_1.png">
+                        <collision-poly>
+                            <point x="0.104651" y="0.103286" />
+                            <point x="0.709302" y="0.056338" />
+                            <point x="0.802326" y="0.521127" />
+                            <point x="0.569767" y="0.99061" />
+                            <point x="1" y="1" />
+                            <point x="0.709302" y="1" />
+                            <point x="0.505814" y="1" />
+                            <point x="0.511628" y="0.99061" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="capitao" sid="691092330737136">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="888513000735484">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950997177427945" speed="5">
+                    <frame duration="1" hotspotX="0.384615" hotspotY="-0.00469484" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\capitaohulk_1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.379808" y="0" />
+                            <point x="0.456731" y="0" />
+                            <point x="0.264423" y="0" />
+                            <point x="0.841346" y="0.84507" />
+                            <point x="0.379808" y="0.985915" />
+                            <point x="0.211538" y="0.56338" />
+                            <point x="0.216346" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gaviao" sid="605340585683857">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="497041695145781">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826611061711829" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.502538" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\gaviao_1.png">
+                        <collision-poly>
+                            <point x="0.164251" y="0.172589" />
+                            <point x="0.497585" y="0.0203046" />
+                            <point x="0.835749" y="0.172589" />
+                            <point x="0.985507" y="0.497462" />
+                            <point x="0.84058" y="0.832487" />
+                            <point x="0.497585" y="0.984772" />
+                            <point x="0.207729" y="0.781726" />
+                            <point x="0.0193237" y="0.497462" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="viuva" sid="128688127599879">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="722890171258385">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242365661179804" speed="5">
+                    <frame duration="1" hotspotX="0.502538" hotspotY="0.502304" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\viuva_1.png">
+                        <collision-poly>
+                            <point x="0.22335" y="0.202765" />
+                            <point x="0.497462" y="0.0184332" />
+                            <point x="0.832487" y="0.152074" />
+                            <point x="0.93401" y="0.497696" />
+                            <point x="0.832487" y="0.847926" />
+                            <point x="0.497462" y="0.986175" />
+                            <point x="0.116751" y="0.894009" />
+                            <point x="0.22335" y="0.497696" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ironman" sid="170928941879083">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="733119241668351" speed="5">
+                    <frame duration="1" hotspotX="0.503401" hotspotY="0.502024" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\ironman_1.png">
+                        <collision-poly>
+                            <point x="0.163265" y="0.097166" />
+                            <point x="0.496599" y="0.0161943" />
+                            <point x="0.843537" y="0.0931174" />
+                            <point x="0.911565" y="0.497976" />
+                            <point x="0.77551" y="0.866397" />
+                            <point x="0.496599" y="0.866397" />
+                            <point x="0.29932" y="0.821862" />
+                            <point x="0.0952381" y="0.497976" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="355631949012079">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\beatr\Documents\TironoFe\imagem\fonte.png" />
+        </object-type>
+        <object-type name="pontos" sid="438419917724683">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="pontos" sid="381556739684839" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="pizza" sid="292623495994866">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="655421371986460" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="125961853650111">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608556276577393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\spriteFE\pizza.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="813042405785548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="740279870183108" speed="5">
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\semf.png">
+                        <collision-poly>
+                            <point x="0.212987" y="0.376147" />
+                            <point x="0.498701" y="0.43578" />
+                            <point x="0.820779" y="0.316514" />
+                            <point x="0.987013" y="0.977064" />
+                            <point x="0.498701" y="0.587156" />
+                            <point x="0.0025974" y="0.995413" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="thanos" sid="199434842284913">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcao" sid="960871809507249" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="855529914726267">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="chegando" pingpong="0" repeatcount="1" repeatto="0" sid="326696227323863" speed="5">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.505155" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanoschegando_1.png" />
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.504854" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanoschegando_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504425" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanoschegando_3.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="ataque" pingpong="0" repeatcount="1" repeatto="0" sid="947484202376269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanosatac_1.png" />
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanosatac_2.png" />
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanosatac_3.png" />
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.505618" original-source="C:\Users\beatr\Documents\TironoFe\imagem\thanos\thanosatac_4.png">
+                        <image-point name="tiro" x="0.149425" y="0.269663" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="710394658246130">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565414292452809" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\gameover.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0322581" />
+                            <point x="0.5" y="0.741935" />
+                            <point x="0.986111" y="0.0322581" />
+                            <point x="0.666667" y="0.225806" />
+                            <point x="0.5" y="0.935484" />
+                            <point x="0.319444" y="0.258065" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="newgame" sid="319725518039117">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="418673878966801">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572339407901731" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\newgame.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.984375" y="0.125" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.015625" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="parabens" sid="118540614108277">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458980986887386" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\arcade-font-writer (3).png">
+                        <collision-poly>
+                            <point x="0.0869565" y="0.666667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.907609" y="0.708333" />
+                            <point x="0.592391" y="0.5" />
+                            <point x="0.5" y="0.916667" />
+                            <point x="0.00543478" y="0.958333" />
+                            <point x="0.391304" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="729375636262586">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881679553068405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\iniciojogo\Sem Título-1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="457125429867098">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244948062832499" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\ferrr.png">
+                        <collision-poly>
+                            <point x="0.0738636" y="0.541667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.931818" y="0.5" />
+                            <point x="0.931818" y="0.5" />
+                            <point x="0.982955" y="0.875" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.00568182" y="0.958333" />
+                            <point x="0.0795455" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="zeram" sid="351602754368779">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170814147676340" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\beatr\Documents\TironoFe\imagem\arcade-font-writer (4).png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.993421" y="0.0416667" />
+                            <point x="0.789474" y="0.5" />
+                            <point x="0.888158" y="0.291667" />
+                            <point x="0.5" y="0.75" />
+                            <point x="0.111842" y="0.291667" />
+                            <point x="0.210526" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Inicio.xml</layout>
+        <layout>Jogo.xml</layout>
+        <layout>sobre.xml</layout>
+        <layout>intrucoes.xml</layout>
+        <layout>gmover.xml</layout>
+        <layout>introducao.xml</layout>
+        <layout>ganhou.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>E-Inicio.xml</event-sheet>
+        <event-sheet>jogo.xml</event-sheet>
+        <event-sheet>sobre.xml</event-sheet>
+        <event-sheet>comojogar.xml</event-sheet>
+        <event-sheet>gameover.xml</event-sheet>
+        <event-sheet>introducao.xml</event-sheet>
+        <event-sheet>ganhou.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Audio" uid="4">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="9" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="ACDC - Back In Black Lyrics 00_00_05-.ogg" />
+        <file name="AC DC Highway to hell Lyrics Letra.ogg" />
+        <file name="Iron man Repulsor Sound effect.ogg" />
+        <file name="transformacao.ogg" />
+        <file name="y2mate.com - musica_tema_vingadores_crNcgjxLyds 00_00_00-00_00_15.ogg" />
+        <file name="y2mate.com - xuxa_parabens_da_xuxa_som_digital_QukZYs2fTaY 00_00_00.36-00_00_00.54.ogg" />
+        <file name="acerto.ogg" />
+        <file name="erro.ogg" />
+        <file name="tristeirmao 00_00_00.34-00_00_00.50.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

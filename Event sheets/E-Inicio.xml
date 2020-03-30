@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E-Inicio</name>
+    <events>
+        <event-group description="" sid="201736928364111" title="Menu" />
+        <event-block sid="433554910619218">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="972016908133765" type="danca">
+                    <param id="0" name="Instance variable">v1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="236126917808648" type="danca">
+                    <param id="0" name="Animation">&quot;danca&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632059417511007">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="898134087058755" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="980024718553020" type="Audio">
+                    <param id="0" name="Audio file">ACDC - Back In Black Lyrics 00_00_05-</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;fundo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="570291703977478">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="487463611924275" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="605826960004224" type="danca">
+                    <param id="0" name="Animation">&quot;danca&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="505967180016273">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="334605522301641" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="757045725528684" type="danca2">
+                    <param id="0" name="Animation">&quot;danca2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784393781622707">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="563356164855655" type="iniciar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="534800480216327" type="System">
+                    <param id="0" name="Layout">introducao</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423111873372637">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="625325479532145" type="sobre" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="378031445886415" type="System">
+                    <param id="0" name="Layout">sobre</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="384494560590007">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="158265268401595" type="comojogar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="250913378394273" type="System">
+                    <param id="0" name="Layout">intrucoes</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="590281065840332">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="145822212958497" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="615691949378249" type="Audio">
+                    <param id="0" name="Tag">&quot;fundo&quot;</param>
+                </action>
+                <action id="33" name="Stop all" sid="489167873722726" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

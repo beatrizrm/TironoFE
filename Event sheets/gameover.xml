@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>gameover</name>
+    <events>
+        <event-block sid="191025006416188">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="634786305334942" type="newgame" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="363133658479206" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779561202113058">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="828815932241683" type="menu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="151032742325410" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="510697620008506">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="602468946613067" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="518233118722728" type="Audio">
+                    <param id="0" name="Audio file">tristeirmao 00_00_00.34-00_00_00.50</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521023861543946">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="639365368959696" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="724817851916430" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>sobre</name>
+    <events>
+        <event-block sid="408819687752617">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="244236023555330" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="995990894914696" type="dancinha">
+                    <param id="0" name="Animation">&quot;dancinha&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="218203071620028">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="309316415477871" type="voltar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="862090741570246" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="131624693366134">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="342910911904739" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="934472798942666" type="Audio">
+                    <param id="0" name="Audio file">ACDC - Back In Black Lyrics 00_00_05-</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;fundo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

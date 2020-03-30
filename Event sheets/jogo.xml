@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>jogo</name>
+    <events>
+        <variable constant="0" name="maxpontos" sid="932382254343453" static="0" type="number">100</variable>
+        <variable constant="0" name="thanosapa" sid="821606795906649" static="0" type="number">15</variable>
+        <variable constant="0" name="pontos" sid="343264146755244" static="0" type="number">0</variable>
+        <variable constant="0" name="vida" sid="409666794129609" static="0" type="number">100</variable>
+        <variable constant="0" name="velocidade" sid="182780495133466" static="0" type="number">3</variable>
+        <variable constant="0" name="velocidade2" sid="534357619421372" static="0" type="number">3</variable>
+        <event-group description="" sid="873340164397789" title="Teclas de movimento" />
+        <event-block sid="305062223223188">
+            <conditions>
+                <condition id="2" name="Key is down" sid="272969754520704" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="465377090420155" type="personagem">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="610465873796130">
+            <conditions>
+                <condition id="2" name="Key is down" sid="901208917350044" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="400694509813925" type="personagem">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="935159388732881">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="278437769842531" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="774317682952818" type="personagem">
+                    <param id="0" name="Vector Y">-700</param>
+                </action>
+                <action id="4" name="Set animation" sid="811587932558717" type="personagem">
+                    <param id="0" name="Animation">&quot;voando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="855085461394647">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="908319550317608" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="629741208474176" type="personagem">
+                    <param id="0" name="Animation">&quot;tiro&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="674174988927225" type="personagem">
+                    <param id="0" name="Object">tiro</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Play" sid="993660793620596" type="Audio">
+                    <param id="0" name="Audio file">Iron man Repulsor Sound effect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">40</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="565176715569186" title="pontos" />
+        <event-block sid="447458412488396">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-group description="" sid="521764100099117" title="movimentos alimentos" />
+        <event-block sid="800984036876170">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="154056662599699" type="beterraba">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="459446179651878" type="peixe">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="265658384814412">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="167752599957489" type="beterraba">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="790044426723535" type="beterraba">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878406422980075">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="946254805843033" type="brocolis">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="300996505446887" type="brocolis">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="840466700114625">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="963727287489356" type="batatafrita">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="951473942250495" type="batatafrita">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829135638662513">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="178852028584436" type="cereais">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="227653989907013" type="cereais">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="974019134630832">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="558361184926970" type="couve">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="659187883196210" type="couve">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926978441630305">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="821409940548808" type="espinafre">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="239403469169848" type="espinafre">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255682884575789">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="309260042914555" type="cenoura">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="526703873752287" type="cenoura">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="414871088010980">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="613246013763158" type="pizza">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="283309860429745" type="pizza">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="633090933849837">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="215105283126624" type="feijão">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="709721024449081" type="feijão">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="225463393375356" title="music" />
+        <event-block sid="648525562925212">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="465162379365415" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="493210692832482" type="Audio">
+                    <param id="0" name="Audio file">AC DC Highway to hell Lyrics Letra</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="428224973902071" type="System" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="957495106876851" title="ganhandoponto" />
+        <event-block sid="639576057820956">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="974810842717037" type="menu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="892096380214239" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+                <action id="33" name="Stop all" sid="588049211860955" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="613612173553996">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="684316348011427" type="tiro">
+                    <param id="0" name="Object">beterraba</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="983292589893368" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="457410054105737" type="beterraba" />
+                <action id="-9" name="Destroy" sid="142927629714155" type="tiro" />
+                <action id="0" name="Play" sid="378059295381788" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="793214088291255">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="147543827669170" type="tiro">
+                    <param id="0" name="Object">peixe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="435761573179581" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="450525842508243" type="peixe" />
+                <action id="-9" name="Destroy" sid="147446217423366" type="tiro" />
+                <action id="0" name="Play" sid="393619259303138" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="202572562548151">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="690166817670148" type="tiro">
+                    <param id="0" name="Object">batatafrita</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="195124139253351" type="batatafrita" />
+                <action id="-9" name="Destroy" sid="473009380314864" type="tiro" />
+                <action id="-11" name="Subtract from" sid="595690391554031" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="693529842542872" type="Audio">
+                    <param id="0" name="Audio file">erro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="535699923554622">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="431733375886805" type="tiro">
+                    <param id="0" name="Object">brocolis</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="341237581383004" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="546088788573652" type="brocolis" />
+                <action id="-9" name="Destroy" sid="651647633937779" type="tiro" />
+                <action id="0" name="Play" sid="500387733574892" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="843528743542339">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="770762052847477" type="tiro">
+                    <param id="0" name="Object">cereais</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="656070607211013" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="565212489951053" type="cereais" />
+                <action id="-9" name="Destroy" sid="323574006311863" type="tiro" />
+                <action id="0" name="Play" sid="462699590443704" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="865143502079548">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="945204749125551" type="tiro">
+                    <param id="0" name="Object">couve</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="866504271960827" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="380894486229817" type="couve" />
+                <action id="-9" name="Destroy" sid="901504188957931" type="tiro" />
+                <action id="0" name="Play" sid="492297104310075" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="594284427410659">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="831124701287432" type="tiro">
+                    <param id="0" name="Object">espinafre</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="939775946973989" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="565585251273040" type="espinafre" />
+                <action id="-9" name="Destroy" sid="643853625987272" type="tiro" />
+                <action id="0" name="Play" sid="497774145253201" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="525163389322445">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="440463325347499" type="tiro">
+                    <param id="0" name="Object">feijão</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="772437791648412" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="561114672598219" type="feijão" />
+                <action id="-9" name="Destroy" sid="329105328943975" type="tiro" />
+                <action id="0" name="Play" sid="879142959236819" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307343373968450">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="781903741136283" type="tiro">
+                    <param id="0" name="Object">pizza</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="154595568053613" type="pizza" />
+                <action id="-9" name="Destroy" sid="291026270051228" type="tiro" />
+                <action id="-11" name="Subtract from" sid="559114172475042" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="309392745670887" type="Audio">
+                    <param id="0" name="Audio file">erro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="316293895667200">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="700423274715550" type="tiro">
+                    <param id="0" name="Object">cenoura</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="247373626130035" type="cenoura" />
+                <action id="-9" name="Destroy" sid="922132752015812" type="tiro" />
+                <action id="-10" name="Add to" sid="122692929118078" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="193874854384950" type="Audio">
+                    <param id="0" name="Audio file">acerto</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">5</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350945480724464">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="112569484248400" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="444331359307182" type="pontos">
+                    <param id="0" name="Text">pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="144321538480572" title="thanos" />
+        <event-block sid="121710953471628">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="454768802659678">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="506714667801380" type="System" />
+                <condition id="-7" name="Compare instance variable" sid="318368236102919" type="thanos">
+                    <param id="0" name="Instance variable">direcao</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="243252598633513" type="System">
+                    <param id="0" name="Object to create">thanos</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">2020</param>
+                    <param id="3" name="Y">792</param>
+                </action>
+                <action id="4" name="Set animation" sid="584804052984910" type="thanos">
+                    <param id="0" name="Animation">&quot;chegando&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="840964178976162" type="thanos">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="965236408850660" title="perdeponto" />
+        <event-block sid="399109702339170">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="222009152418400" type="peixe">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="467394216728607" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="845249074639674">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="435843488826788" type="beterraba">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="460117365920253" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="120709079932730">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="877477410716743" type="batatafrita">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="699604429755660" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="158235606140804">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="612501598018411" type="brocolis">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="652996030584274" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792214282190535">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="939756442250753" type="cenoura">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="762087248989319" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="124322521958753">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="525160931056420" type="couve">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="872132326460285" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837455957937250">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="437632052396768" type="espinafre">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="585167007375781" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894773684242002">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="823992473681472" type="feijão">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="532426934085764" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="899007515661461">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="304710701828130" type="pizza">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="241100443727651" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276123420301370">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="789118776628727" type="cereais">
+                    <param id="0" name="Object">personagem</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="839135903458571" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="373788257963280" title="alimentos" />
+        <event-block sid="713041130593226">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="521064127613491" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="612746805983682" type="System">
+                    <param id="0" name="Object to create">batatafrita</param>
+                    <param id="1" name="Layer">batatafrita.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="739740145220370">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="598580433522843" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="952089729855814" type="System">
+                    <param id="0" name="Object to create">brocolis</param>
+                    <param id="1" name="Layer">brocolis.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="296712099312147">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="461148382462981" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="730907231433507" type="System">
+                    <param id="0" name="Object to create">cereais</param>
+                    <param id="1" name="Layer">cereais.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="172575946991344">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="112618407510181" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="833413425534692" type="System">
+                    <param id="0" name="Object to create">couve</param>
+                    <param id="1" name="Layer">couve.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="220443540125532">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="799897677189261" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="824566249458539" type="System">
+                    <param id="0" name="Object to create">espinafre</param>
+                    <param id="1" name="Layer">espinafre.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790628572425385">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="534782297287705" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="240927184217261" type="System">
+                    <param id="0" name="Object to create">feijão</param>
+                    <param id="1" name="Layer">feijão.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629151706318696">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="934936410607795" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="401808651191609" type="System">
+                    <param id="0" name="Object to create">cenoura</param>
+                    <param id="1" name="Layer">cenoura.X</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="301427743494454">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="957901393107435" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="963258621300077" type="System">
+                    <param id="0" name="Object to create">peixe</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="937723459045488">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="529937523564307" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="616712898431489" type="vidan">
+                    <param id="0" name="Height">vida</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="487660628580368">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="854251044818954" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="431418374093737" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970988286940380">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="303626180102880" type="System">
+                    <param id="0" name="Interval (seconds)">velocidade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="398342539747155" type="System">
+                    <param id="0" name="Object to create">pizza</param>
+                    <param id="1" name="Layer">pizza.x</param>
+                    <param id="2" name="X">random(1721,1742)</param>
+                    <param id="3" name="Y">random(22,921)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="353042941177284">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="598417943512876" type="System">
+                    <param id="0" name="Variable">vida</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="706715838179682" type="System">
+                    <param id="0" name="Layout">gmover</param>
+                </action>
+                <action id="33" name="Stop all" sid="237353669637087" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="854177607797510">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="359352844876181" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">maxpontos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="429912078409014" type="System">
+                    <param id="0" name="Layout">ganhou</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="498106559276085">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="591093912205341" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="664043375021017" type="pontos">
+                    <param id="0" name="Text">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

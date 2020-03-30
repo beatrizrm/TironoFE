@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ganhou</name>
+    <events>
+        <event-block sid="234223627369571">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="372970934612744" type="newgame" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="115054331720176" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="814874840893530">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="149775961511355" type="menu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="596037173535615" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="762722732156103">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="334625119833736" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="345281482603990" type="Audio">
+                    <param id="0" name="Audio file">y2mate.com - xuxa_parabens_da_xuxa_som_digital_QukZYs2fTaY 00_00_00.36-00_00_00.54</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="517658707414989">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="515542985102557" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="692535046828095" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

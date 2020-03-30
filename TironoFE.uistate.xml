@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="0">Inicio</layout>
+        <layout order="2">Jogo</layout>
+        <layout order="4">gmover</layout>
+        <layout order="5">introducao</layout>
+        <layout order="7">intrucoes</layout>
+        <layout order="8">ganhou</layout>
+        <layout order="11">sobre</layout>
+        <event-sheet order="1">jogo</event-sheet>
+        <event-sheet order="3">E-Inicio</event-sheet>
+        <event-sheet order="6">gameover</event-sheet>
+        <event-sheet order="9">ganhou</event-sheet>
+        <event-sheet order="10">introducao</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="1" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/danca/" />
+        <folder expanded="1" path="animation-folder/iniciar/" />
+        <folder expanded="1" path="animation-folder/comojogar/" />
+        <folder expanded="1" path="animation-folder/sobre/" />
+        <folder expanded="1" path="animation-folder/danca2/" />
+        <folder expanded="1" path="animation-folder/dancinha/" />
+        <folder expanded="1" path="animation-folder/voltar/" />
+        <folder expanded="1" path="animation-folder/cenario/" />
+        <folder expanded="1" path="animation-folder/chao/" />
+        <folder expanded="1" path="animation-folder/personagem/" />
+        <folder expanded="1" path="animation-folder/parede/" />
+        <folder expanded="1" path="animation-folder/vida/" />
+        <folder expanded="1" path="animation-folder/tvida/" />
+        <folder expanded="1" path="animation-folder/peixe/" />
+        <folder expanded="1" path="animation-folder/beterraba/" />
+        <folder expanded="1" path="animation-folder/erros/" />
+        <folder expanded="1" path="animation-folder/acertos/" />
+        <folder expanded="1" path="animation-folder/tiro/" />
+        <folder expanded="1" path="animation-folder/menu/" />
+        <folder expanded="1" path="animation-folder/brocolis/" />
+        <folder expanded="1" path="animation-folder/batatafrita/" />
+        <folder expanded="1" path="animation-folder/cereais/" />
+        <folder expanded="1" path="animation-folder/couve/" />
+        <folder expanded="1" path="animation-folder/feijão/" />
+        <folder expanded="1" path="animation-folder/espinafre/" />
+        <folder expanded="1" path="animation-folder/ceu/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/vidan/" />
+        <folder expanded="1" path="animation-folder/cenoura/" />
+        <folder expanded="1" path="animation-folder/fundointroducao/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/thor/" />
+        <folder expanded="1" path="animation-folder/hulk/" />
+        <folder expanded="1" path="animation-folder/capitao/" />
+        <folder expanded="1" path="animation-folder/gaviao/" />
+        <folder expanded="1" path="animation-folder/viuva/" />
+        <folder expanded="1" path="animation-folder/ironman/" />
+        <folder expanded="1" path="animation-folder/pizza/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/thanos/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/newgame/" />
+        <folder expanded="1" path="animation-folder/parabens/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/zeram/" />
+    </folders-expanded>
+</c2uistate>

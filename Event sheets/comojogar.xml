@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>comojogar</name>
+    <events>
+        <event-block sid="518532558442122">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="367444607815545" type="voltar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="177007711847986" type="System">
+                    <param id="0" name="Layout">Inicio</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="492864113670113">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="576570127666766" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="625989048621610" type="Audio">
+                    <param id="0" name="Audio file">ACDC - Back In Black Lyrics 00_00_05-</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;fundo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

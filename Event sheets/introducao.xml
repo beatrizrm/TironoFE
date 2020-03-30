@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>introducao</name>
+    <events>
+        <event-block sid="455231068188573">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="454739492541231" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="766149941118426" type="Sprite6" />
+                <action id="-9" name="Destroy" sid="900000680921924" type="Sprite7" />
+                <action behavior="Platform" id="8" name="Set vector X" sid="708567405257019" type="thor">
+                    <param id="0" name="Vector X">1865</param>
+                </action>
+                <action behavior="Platform" id="8" name="Set vector X" sid="776743444907790" type="viuva">
+                    <param id="0" name="Vector X">700</param>
+                </action>
+                <action behavior="Platform" id="8" name="Set vector X" sid="787070765024619" type="hulk">
+                    <param id="0" name="Vector X">700</param>
+                </action>
+                <action behavior="Platform" id="8" name="Set vector X" sid="464816481208109" type="gaviao">
+                    <param id="0" name="Vector X">700</param>
+                </action>
+                <action behavior="Platform" id="8" name="Set vector X" sid="976733878639518" type="capitao">
+                    <param id="0" name="Vector X">700</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="524547380892513" type="thor">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="446034285890837" type="viuva">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="728102668042106" type="hulk">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="789316982491962" type="gaviao">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="472773184761038" type="capitao">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="582869557312042" type="ironman">
+                    <param id="0" name="X">147</param>
+                </action>
+                <action id="-3" name="Create object" sid="359171172005403" type="System">
+                    <param id="0" name="Object to create">Sprite6</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">603</param>
+                    <param id="3" name="Y">217</param>
+                </action>
+                <action id="-3" name="Create object" sid="541094328421804" type="System">
+                    <param id="0" name="Object to create">zeram</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">603</param>
+                    <param id="3" name="Y">217</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="917501420262140">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="781080305727204" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="476695379792815" type="Audio">
+                    <param id="0" name="Audio file">transformacao</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="825577929097658" type="System">
+                    <param id="0" name="Object to create">personagem</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">830</param>
+                    <param id="3" name="Y">441</param>
+                </action>
+                <action id="4" name="Set animation" sid="960000960949170" type="personagem">
+                    <param id="0" name="Animation">&quot;transformacao&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956512701105385">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="933333151486537" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="415957345299168" type="Audio">
+                    <param id="0" name="Audio file">y2mate.com - musica_tema_vingadores_crNcgjxLyds 00_00_00-00_00_15</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="575338982910497">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="601880691151425" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">19</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="903372858324098" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+                <action id="33" name="Stop all" sid="775261725729906" type="Audio" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
